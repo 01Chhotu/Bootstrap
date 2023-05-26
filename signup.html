@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- <a href="index.html"></a> -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="icon.jpg" alt="" width="30" height="24">
+      </a>
+      <a class="navbar-brand" href="#">iCoder</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Topics
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Web dev</a></li>
+              <li><a class="dropdown-item" href="#">android</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <div class="mx-2">
+          <a class="nav-item" href="login.html" ><button type="button" class="btn btn-danger">Login</button></a>
+          <a class="nav-item action" href="signup.html" ><button type="button" class="btn btn-danger">SignUp</button></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="roundbox registrationForm borderTopRound " style="width: 30em;margin: 2em auto;">
+    <div class="caption titled">Register in iCoder
+        <div class="top-links">
+        </div>
+    </div>
+    <form method="post" action="" id="registerForm"><input type="hidden" name="csrf_token" value="175f827738c24b5838d34b08d1d2cd06">
+        <table class="table-form" style="margin: 2em 2em;">
+            <tr class="additional-field">
+                <td class="field-name">Name</td><td><input style="width: 15em;" name="name" value=""></td>
+            </tr>
+            <tr>
+                <td class="field-name">Email</td><td><input style="width: 15em;" name="email" value=""></td>
+            </tr>
+                <tr>
+                    <td class="field-name">Password</td><td><input style="width: 15em;" name="password" type="password" value=""></td>
+                </tr>
+    <tr class="subscription-row ">
+        <td>&nbsp;</td>
+    <td><div class="shiftUp">        <span class="notice for__password">                        Password should contain at least five characters
+</span>
+</div></td>
+    </tr>
+                <tr>
+                    <td class="field-name">Confirm Password</td><td><input style="width: 15em;" name="passwordConfirmation" type="password" value=""></td>
+                </tr>
+            <tr>
+                <td colspan="2">
+                    <div style="text-align: center;"><input class="submit" type="submit" value="login"></div>
+                        <div class="smaller notice" style="margin-top: 1.5rem; margin-left: 1rem;">
+                            If you have already registered before, but have not received a confirmation email, please click <a href="/register/confirmation">the link</a>.
+                        </div>
+
+                </td>
+            </tr>
+        </tbody></table>
+    <input type="hidden" name="_tta" value="772"></form>
+        <div class="bottom-links">
+            <table style="width:100%;">
+                <tbody>
+                    <tr>
+                        <td style="text-align:left;">
+                        </td>
+                        <td style="text-align:right;">
+                                <a href="/enter/Gmail" class="useGmailLink">Use Gmail</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+</div>
+  <div id="footer" class="footer-wrap">
+    <footer id="colophon" class="site-footer container clearfix" role="contentinfo">
+      <div id="footer-text" class="site-info">
+        <p>Copyright © 2023 iCoder | All rights reserved</p>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
